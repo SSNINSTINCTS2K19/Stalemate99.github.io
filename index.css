@@ -1,3 +1,4 @@
+
 @font-face{
     src: url("./Loguetown.ttf");
     font-family: "Loguetown";
@@ -23,6 +24,8 @@ html,
 body {
     width: 100%;
     height: 100vh;
+-webkit-transform:translate3d(0,0,0);
+
 }
 .filler{
     align-self: flex-start;
@@ -35,7 +38,6 @@ body {
 body {
     background: url("./larger\ sky-02.svg");
     color: white;
-
 }
 
 
@@ -212,12 +214,14 @@ p{
 
 .pac{
     position: absolute;
-    top:14%;
+    top:13%;
+    backface-visibility:hidden;
     width:9%;
     animation: eat 17s;
     -webkit-animation: eat 17s;
-    animation-timing-function:cubic-bezier(1, 1.26, 0.88, 1.1);
+    animation-timing-function:linear;
     animation-iteration-count: infinite;
+    -webkit-backface-visibility:hidden;
 }
 @keyframes eat{
 0%{
@@ -227,6 +231,7 @@ p{
     -ms-transform: translateX(-15vw);
     -o-transform: translateX(-15vw);
 }
+
 100%{
     transform: translateX(100vw);
     -webkit-transform: translateX(100vw);
