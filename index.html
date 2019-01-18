@@ -12,20 +12,24 @@
     <script src="flipclock.js"></script>
 </head>
 <body>
+    <img src="./Pacman-1s-200px.svg" class="pac" alt="">
     <img class="logo img-fluid" src="./ssn.png" alt="">
     <img src="./instincts-logo-white.svg" class="resize" alt="">
     <img class="gate" src="download.svg" alt="">
     <img class="moon" src="./temp web-03.svg" alt="">
     <div class="row">
         <div style="position: relative;" class="col-md-6">
+        
                 <img class="tower" src="./CT-05.svg" alt="">
                 <img class="pikachu" src="./Pikachu.svg" alt="">
 
         </div>
         <div class="col-md-6 filler">
-            <h3 class="logue">Relive the 90s</h3>
-            <h4 class="logue">March 7.8.9</h4>
-            <!-- <div class="timer flex">
+            <img src="./instincts typography blue-01.svg" style="width:50%" alt="">
+            <br>
+            <h3 class="logue" style="padding-top:3%">Relive the 90s</h3>
+            <h4 class="logue" style="font-size: 2rem">March 7, 8, 9</h4>
+            <!-- <div class="timer flex"
                 <div id="dayspan" class="disp col-xs-2">
                     <span><br>Days</span>
                 </div>
@@ -43,5 +47,22 @@
         </div>
        </div>
        <script src="timer2.js"></script>
+       <script>
+       var moon=document.querySelector(".moon");
+       setTimeout(function(){
+           moon.classList.add("eat");
+           setInterval(function(){
+        moon.classList.add("eat");
+       },17000);     
+
+       setInterval(function(){
+        moon.classList.remove("eat");
+       },8000);
+       
+       },2000);
+
+      
+      
+       </script>
 </body>
 </html>  
