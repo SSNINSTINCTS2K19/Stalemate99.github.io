@@ -39,7 +39,7 @@ body {
 
 .moon{
     position: absolute;
-    top:8%;
+    top:13%;
     left:5%;
     width: 10%;
 }
@@ -134,8 +134,18 @@ body {
 p{
     position: absolute;
 }
+.logo{
+    width:7%;
+    margin-top: 2%;
+    margin-left:3%;
+    }
 
 @media(max-width:768px){
+    .logo{
+        width: 15%;
+        margin-top: 5%;
+        margin-left:3%;
+    }
     .tower{
         padding-left:5%;
         margin-left:10%;
@@ -196,6 +206,4 @@ p{
     }
     }
 }
-.logo{
-width:7%;
-}
+
