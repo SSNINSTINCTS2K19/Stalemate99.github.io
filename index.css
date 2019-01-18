@@ -65,7 +65,7 @@ body {
 {
     width: 80%;
     margin-left: 25%;
-    margin-top:8%;
+    margin-top:5%;
  
 }
 
@@ -196,4 +196,7 @@ p{
             -o-transform: translate(-225%,255%) scale(15, 15) rotate(-3deg);
     }
     }
+}
+.logo{
+width:7%;
 }
