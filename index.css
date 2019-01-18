@@ -207,3 +207,10 @@ p{
     }
 }
 
+.pikachu{
+    position: absolute;
+    top:71%;
+    left:45%;
+    width:15%
+}
+
