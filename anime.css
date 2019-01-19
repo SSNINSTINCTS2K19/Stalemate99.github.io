@@ -1,0 +1,115 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+.close{
+    position: absolute;
+    width:7%;
+    top:40%;
+    left: 20%;
+    animation: wiggle 4s 0s linear;
+}
+
+.open
+{
+    width:7%;
+    position: absolute;
+    top:40%;
+    left: 20%;
+    animation: appear 4s 0s linear;
+}
+
+.poke
+{
+    width:15%;
+    position: absolute;
+    /* transform: translate() */
+    top:28%;
+    left:17%;
+    opacity:0;
+    transform:scale(0.1);
+    transition: all 1.7s;
+
+    /* transition-delay: 4s; */
+    /* animation: out 3s 4s linear; */
+}
+
+.move
+{
+    transform: scale(1) translate(250%,55%) ;
+    opacity: 1;
+}
+
+@keyframes wiggle{
+    0%{
+        }
+    10%{
+        transform: rotate(-13deg);
+        }
+    20%{
+        transform: rotate(13deg);
+        }
+    30%{
+        transform: rotate(-13deg);
+        }
+    40%{
+        transform: rotate(13deg);
+        }
+    50%{
+        transform: rotate(-13deg);
+        }
+    60%{
+        transform: rotate(13deg);
+        }
+    70%{
+        transform: rotate(-13deg);
+        }
+    80%{
+        transform: rotate(13deg);
+        }
+    90%{
+        transform: rotate(-13deg);
+        }
+    95%{
+        transform: rotate(13deg);
+        opacity: 0.99;
+        }
+    100%{
+        opacity: 0;
+        }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        }
+    95%{
+        opacity: 0.01;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
+
+@keyframes out{
+    0%{
+        transform: rotate(xx) scale(0.1) translateX(-1900%) translateY(-300%);
+        opacity: 0;
+        }
+    10%{
+        transform: scale(0.3) translateX(-340%) translateY(-60%);
+        opacity: 1;
+        color: #FFFF;
+        }
+    90%{
+        transform: scale(1);
+        opacity: 1;
+        color: #FFFF;
+        }
+    100%{
+        transform: rotate(xx) scale(1);
+        opacity: 1;
+        }
+}

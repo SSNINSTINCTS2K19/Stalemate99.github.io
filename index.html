@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <link rel="stylesheet" href="flipclock.css">
- 
+
 </head>
+
 <body>
     <img src="./Pacman-1s-200px.svg" class="pac" alt="">
     <img class="logo img-fluid" src="./ssn.png" alt="">
     <img src="./instincts-logo-white.svg" class="resize" alt="">
     <img class="moon" src="./temp web-03.svg" alt="">
     <div class="row">
-        <div style="position: relative;" class="col-md-6">
-        
-                <img class="tower" src="./CT-05.svg" alt="">
-                <img class="pikachu" src="./Pikachu.svg" alt="">
+        <div style="position: relative;" class="col-md-6 anime">
+
+            <img class="tower" src="./CT-05.svg" alt="">
+            <img class="pikachu" src="./Pikachu.svg" alt="">
 
         </div>
+        <img class="snitch" src="./golden-snitch.svg" style="width: 2%;position: absolute;" alt="">
         <div class="col-md-6 filler">
             <img src="./instincts typography blue-01.svg" style="width:50%" alt="">
             <br>
@@ -43,27 +46,41 @@
             </div> -->
             <div class="clock flex" style="margin:2em;"></div>
         </div>
-       </div>
-    
-       <script>
-       var moon=document.querySelector(".moon");
-       setTimeout(function(){
-           moon.classList.add("eat");
-           setInterval(function(){
-        moon.classList.add("eat");
-       },17000);     
+    </div>
 
-       setInterval(function(){
-        moon.classList.remove("eat");
-       },8000);
-       
-       },2500);
+    <script>
+        var moon = document.querySelector(".moon");
+        var snitch = document.querySelector(".snitch");
+        var pika = document.querySelector(".poke");
+        setTimeout(function () {
+            moon.classList.add("eat");
+            setInterval(function () {
+                moon.classList.add("eat");
+            }, 17000);
 
-      
-      
-       </script>
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script src="timer2.js"></script>
-          <script src="flipclock.js"></script>
+            setInterval(function () {
+                moon.classList.remove("eat");
+            }, 8000);
+
+        }, 2500);
+
+        setInterval(function () {
+            var vic = `translate3d(${genRandom(10,90)}vw,${genRandom(10,90)}vh,0px)`;
+            snitch.style.transform = vic;
+        }, 2000);
+
+        function genRandom(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        setTimeout(
+            () => {
+                pika.classList.toggle("move");
+            }, 4000);
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="timer2.js"></script>
+    <script src="flipclock.js"></script>
 </body>
-</html>  
+
+</html>
