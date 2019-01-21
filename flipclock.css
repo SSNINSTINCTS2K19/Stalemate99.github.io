@@ -107,7 +107,7 @@
   z-index: 1;
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 15%;
   height: 50%;
   font-size: 40px;
   overflow: hidden; 
@@ -185,7 +185,8 @@
   display: inline-block;
   position: relative;
   width: 20px;
-  height: 100px; }
+  height: 100px; 
+}
 
 .flip-clock-divider:first-child {
   width: 0; }
@@ -193,8 +194,8 @@
 .flip-clock-dot {
   display: block;
   background: #fff;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
