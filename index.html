@@ -20,11 +20,27 @@
     <div class="row">
         <div style="position: relative;" class="col-md-6 anime">
 
+
             <img class="tower" src="./CT and base-05.svg" alt="">
-            <img class="pikachu" src="./Pikachu.svg" alt="">
+            <img class="closer" src="pokeball.svg" alt="">
+            <img class="opener" src="open-pokeball.svg" alt="">
+            <img class="pikachu poke" src="./pikachuify.svg" alt="">
+            <img src="./thalaivar.png" style="width: 50%;
+            position: absolute;
+            top: 55%;
+            left: 48%;" alt="">
+            <img src = "./shinchan.png" style="width: 50%;
+            position: absolute;
+            
+            top : 60%;
+            left: 50%;"> 
+
+            <img src="./kuttithala.png" style="position: absolute;    width: 70%;
+            top: 54.5%;
+            left: 53%" alt="">
 
         </div>
-        <img class="snitch" src="./golden-snitch.svg" style="width: 2%;position: absolute;" alt="">
+        <img class="snitch" src="./golden-snitch.svg" style="width: 2.5%;position: absolute;" alt="">
         <div class="col-md-6 filler">
             <img src="./instincts typography blue-01.svg" style="width:50%" alt="">
             <br>
@@ -57,6 +73,7 @@
         var flipdown=new FlipDown(1551897000).start();
         var moon = document.querySelector(".moon");
         var snitch = document.querySelector(".snitch");
+        var pika = document.querySelector(".poke");
         setTimeout(function () {
             moon.classList.add("eat");
             setInterval(function () {
@@ -77,7 +94,14 @@
         function genRandom(min, max) {
             return Math.random() * (max - min) + min;
         }
-
+        setTimeout(
+            () => {
+                pika.classList.toggle("move");
+            }, 4000);
+            setTimeout(function(){
+                document.querySelector(".opener").style.display="none";
+               document.querySelector(".closer").style.display="none";
+            },6000)
  
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
