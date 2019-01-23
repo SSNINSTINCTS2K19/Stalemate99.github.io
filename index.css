@@ -299,7 +299,7 @@ p{
 } */
 .moon{
     position: absolute;
-    top:13%;
+    top:11%;
     left:7%;
     width: 10%;
     transition:all 0.9s;
@@ -311,11 +311,11 @@ p{
 
 
 .eat{
-    transform: translate(-20px,-12px) scale(0) ;
-    -webkit-transform: translate(-20px,-12px) scale(0) ;
-    -moz-transform: translate(-20px,-12px) scale(0) ;
-    -ms-transform: translate(-20px,-12px) scale(0) ;
-    -o-transform: translate(-20px,-12px) scale(0) ;
+    transform: translate(-20px,-2px) scale(0) ;
+    -webkit-transform: translate(-20px,-2px) scale(0) ;
+    -moz-transform: translate(-20px,-2px) scale(0) ;
+    -ms-transform: translate(-20px,-2px) scale(0) ;
+    -o-transform: translate(-20px,-2px) scale(0) ;
 }
 
 .closer
@@ -469,4 +469,10 @@ p{
 }
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after{
     background: white !important;
+}
+@media(min-width:400px) and (max-width:768px){
+.filler{
+    background: url("./backup.PNG");
+    background-size: cover;
+}
 }
